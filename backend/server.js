@@ -63,7 +63,7 @@ mongoose.connect(MONGODB_URI)
     console.log('⚠️  Running without database - using in-memory store');
   });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 10000;
 server.listen(PORT, () => {
   console.log(`🌿 Greenhouse API running on port ${PORT}`);
   console.log(`🔌 WebSocket server running on ws://localhost:${PORT}/ws`);
